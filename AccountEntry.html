@@ -7,29 +7,7 @@
 <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist\css\bootstrap.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body class="banana-bg">
-  <style type="text/css">
-    /*Refer to images   */
-    .butterscotch-bg{
-      background-color: #FABD02;
-    }
-    .banana-bg{
-      background-color: #FCF4A3;
-    }
-    .changebtncolor{
-      color: black;
-      display: block;
-      padding: 1rem 1.5rem;
-      font-weight: 700;
-      text-decoration: none !important;
-    }
-    .changebtncolor:hover ,.changebtncolor:focus{
-      background-color:#F9A602;
-      color: black;
-      transition: background-color 0.3s ease-in-out;
-    }
-
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="css\main.css">
 <nav class="navbar navbar-expand-lg butterscotch-bg sticky-top" style="padding-top: 0px !important; padding-bottom: 0px !important;">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -67,63 +45,83 @@ Status
 Add place
 Add receipt
   ---->
+<div class = "container mt-4 mb-4">
+  <div class = "col-lg-6 offset-lg-3 font-weight-bold" style="font-size: 15px;">
 <form>
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput" style="">Item</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Item">
   </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-    </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Amount</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Amount">
   </div>
-  <fieldset class="form-group">
-    <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-          <label class="form-check-label" for="gridRadios1">
-            First radio
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-          <label class="form-check-label" for="gridRadios2">
-            Second radio
-          </label>
-        </div>
-        <div class="form-check disabled">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-          <label class="form-check-label" for="gridRadios3">
-            Third disabled radio
-          </label>
-        </div>
-      </div>
-    </div>
-  </fieldset>
-  <div class="form-group row">
-    <div class="col-sm-2">Checkbox</div>
-    <div class="col-sm-10">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Example checkbox
-        </label>
-      </div>
-    </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Currency</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Currency">
   </div>
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Sign in</button>
-    </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Note</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Note"></textarea>
   </div>
-</form>
-<!--Form Entry Ends--->
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Payee</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Payee">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Date</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Date (01-01-2001)">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Time</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Time (22:13:00)">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Payment Type</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Cash</option>
+      <option>Debit Card</option>
+      <option>Credit Card</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Status</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Paid</option>
+      <option>Pending</option>
+      </select>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Place</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Place (Co-ordinates)">
+  </div>
+  <label>Receipt</label>
+  <div class="custom-file">
+    <label class="custom-file-label" for="customFile">Choose file</label>
+    <input type="file" class="custom-file-input" id="customFile">
+  </div>
 
+</form>
+</div>
+<center class="mt-4 mb-4">
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn butterscotch-bg active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Add Record
+  </label>
+  <label class="btn btn-success">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Edit Record
+  </label>
+  <label class="btn btn-danger">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Delete Record
+  </label>
+</div>
+</center>
+</div>
+<!--Form Entry Ends
+Status
+Add place
+Add receipt
+  --->
 </body>
 
 </script>
