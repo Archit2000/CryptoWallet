@@ -6,15 +6,13 @@
     }
     .changebtncolor{
       color: black;
-      display: block;
-      padding: 1rem 1.5rem;
-      font-weight: 700;
       text-decoration: none !important;
     }
     .changebtncolor:hover ,.changebtncolor:focus{
       background-color:#F9A602;
+      border-radius: 12px;
       color: black;
-      transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out, border-radius 0.4s ease-in-out;
     }
     .form-padded{
       margin-left: 10px !important;
