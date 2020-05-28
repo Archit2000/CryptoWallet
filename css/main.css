@@ -1,21 +1,50 @@
-    .butterscotch-bg{
-      background-color: #FABD02;
-    }
-    .banana-bg{
-      background-color: #FCF4A3;
-    }
-    .changebtncolor{
-      color: black;
-      text-decoration: none !important;
-    }
-    .changebtncolor:hover ,.changebtncolor:focus{
-      background-color:#F9A602;
-      border-radius: 12px;
-      color: black;
-      transition: background-color 0.3s ease-in-out, border-radius 0.4s ease-in-out;
-    }
-    .form-padded{
-      margin-left: 10px !important;
-      margin-right: 10px !important;
-    }
+.bg-gold{
+  background-color: #f9a602;
+}
+.bg-banana{
+  background-color: #fcf4a3;
+}
+
+.shadow{
+  box-shadow: 5px 10px #d3cc8f;
+}
+
+.error-display{
+  color: red;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.alert-error {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.dropdown-mod{
+  background-color: transparent;
+  color: white;
+}
+.dropdown-mod:hover{
+  background-color: white;
+  color: black;
+}
 
